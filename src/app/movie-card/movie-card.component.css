@@ -1,0 +1,116 @@
+/* Set the image container to relative so the icon is positioned relative to it */
+.card {
+    position: relative;
+}
+
+/* Ensure the icon container remains absolute inside the image container */
+.header-icon-container {
+    position: absolute;
+    top: 40%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Style the icon */
+.header-icon {
+    font-size: 54px;
+    text-shadow: 0px 0px 20px #6ABCEA, 0px 5px 20px #6ABCEA;
+    color: #6ABCEA;
+    opacity: 0.85;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-icon:hover {
+    font-size: 74px;
+    text-shadow: 0px 0px 20px #6ABCEA, 0px 5px 30px #6ABCEA;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    opacity: 1;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .header-icon {
+        font-size: 40px;
+    }
+
+    .header-icon:hover {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-icon {
+        font-size: 120px;
+    }
+
+    .header-icon:hover {
+        font-size: 150px;
+    }
+}
+   .fa-heart{
+            color: #6ABCEA;
+    }
+    .fa-star{
+            color: #6ABCEA;
+
+    }
+.card {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transform: translateY(-10px); /* Lift the card slightly */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card:hover .header-icon {
+    font-size: 74px; /* Increase the size of the icon */
+    text-shadow: 0px 0px 20px #6ABCEA, 0px 5px 30px #6ABCEA;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    opacity: 1;
+}
+
+/* Ensure the entire card is clickable */
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Ensure link doesn't change text color */
+}
+
+/* Cool transition effect for the entire card */
+.card-body {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+@media (max-width: 768px) {
+    .header-icon {
+        font-size: 40px;
+    }
+
+    .header-icon:hover {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-icon {
+        font-size: 30px;
+    }
+
+    .header-icon:hover {
+        font-size: 50px;
+    }
+}

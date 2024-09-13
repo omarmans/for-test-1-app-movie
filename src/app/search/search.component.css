@@ -1,0 +1,7 @@
+.colorCayan {
+    background-color: #6ABCEA;
+}
+
+.colorCayan:hover {
+    background-color: #4A9BCC; /* darker shade for hover effect */
+}
